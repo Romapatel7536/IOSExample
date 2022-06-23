@@ -28,6 +28,10 @@
 		FF2153A228633CA5000BFEFA /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2153A128633CA5000BFEFA /* UserPresenter.swift */; };
 		FF2153AF28642977000BFEFA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2153AD28642977000BFEFA /* TableViewCell.swift */; };
 		FF2153B028642977000BFEFA /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF2153AE28642977000BFEFA /* TableViewCell.xib */; };
+		FF2153BF286476A7000BFEFA /* MVVMArchitecture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2153BE286476A7000BFEFA /* MVVMArchitecture.storyboard */; };
+		FF2153C1286476C7000BFEFA /* MVVMArchitectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2153C0286476C7000BFEFA /* MVVMArchitectureViewController.swift */; };
+		FF2153C328647758000BFEFA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2153C228647758000BFEFA /* UserViewModel.swift */; };
+		FF2153C5286477A6000BFEFA /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2153C4286477A6000BFEFA /* ApiRequest.swift */; };
 		FF47C57127E07F310098A6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47C57027E07F310098A6E9 /* AppDelegate.swift */; };
 		FFAEF97A27D20B3E003C623A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAEF97927D20B3E003C623A /* SceneDelegate.swift */; };
 		FFAEF98127D20B3F003C623A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFAEF98027D20B3F003C623A /* Assets.xcassets */; };
@@ -81,6 +85,10 @@
 		FF2153A128633CA5000BFEFA /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		FF2153AD28642977000BFEFA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FF2153AE28642977000BFEFA /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		FF2153BE286476A7000BFEFA /* MVVMArchitecture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVMArchitecture.storyboard; sourceTree = "<group>"; };
+		FF2153C0286476C7000BFEFA /* MVVMArchitectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMArchitectureViewController.swift; sourceTree = "<group>"; };
+		FF2153C228647758000BFEFA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		FF2153C4286477A6000BFEFA /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		FF2BE69D27D5F9770066B17D /* DictonariesExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DictonariesExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2BE69E27D61BF70066B17D /* OptionalsExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalsExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2BE69F27D627DA0066B17D /* Chapter-2Exercise.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Chapter-2Exercise.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -163,6 +171,7 @@
 		FF2153632861BF47000BFEFA /* IOSArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				FF2153B128646E28000BFEFA /* MVVM */,
 				FF21539A2863380F000BFEFA /* MVP */,
 				FF2153642861BF52000BFEFA /* MVC */,
 				FF21536C2861C01D000BFEFA /* ArchitectureExample.storyboard */,
@@ -245,6 +254,41 @@
 				FF21539F28633BE2000BFEFA /* MVPArchitectureViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FF2153B128646E28000BFEFA /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FF2153BD2864767C000BFEFA /* WebService */,
+				FF2153BC28647674000BFEFA /* ViewModel */,
+				FF2153BB2864766E000BFEFA /* View */,
+				FF2153BE286476A7000BFEFA /* MVVMArchitecture.storyboard */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		FF2153BB2864766E000BFEFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF2153C0286476C7000BFEFA /* MVVMArchitectureViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF2153BC28647674000BFEFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF2153C228647758000BFEFA /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF2153BD2864767C000BFEFA /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				FF2153C4286477A6000BFEFA /* ApiRequest.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 		FF7490AF27D8721C008345EA /* AdvancedSwift_IOS(B) */ = {
@@ -445,6 +489,7 @@
 				FF21536D2861C01D000BFEFA /* ArchitectureExample.storyboard in Resources */,
 				FFAEF98427D20B3F003C623A /* LaunchScreen.storyboard in Resources */,
 				FF2153B028642977000BFEFA /* TableViewCell.xib in Resources */,
+				FF2153BF286476A7000BFEFA /* MVVMArchitecture.storyboard in Resources */,
 				FF21536B2861C003000BFEFA /* MVCArchitecture.storyboard in Resources */,
 				FF21539E286339E6000BFEFA /* MVPArchitecture.storyboard in Resources */,
 				FFAEF98127D20B3F003C623A /* Assets.xcassets in Resources */,
@@ -601,12 +646,15 @@
 				FF2153A228633CA5000BFEFA /* UserPresenter.swift in Sources */,
 				FF215397286318C8000BFEFA /* GenericClass.swift in Sources */,
 				FF21538C2862E5DF000BFEFA /* UserTableViewCell.swift in Sources */,
+				FF2153C1286476C7000BFEFA /* MVVMArchitectureViewController.swift in Sources */,
 				FF21537B2862D1E8000BFEFA /* UserModel.swift in Sources */,
 				FF47C57127E07F310098A6E9 /* AppDelegate.swift in Sources */,
 				FF2153712861CBE8000BFEFA /* CircleLabel.swift in Sources */,
 				FF2153792862D1C8000BFEFA /* UserResponse.swift in Sources */,
 				FF2153882862E08F000BFEFA /* R.generated.swift in Sources */,
 				FFAEF97A27D20B3E003C623A /* SceneDelegate.swift in Sources */,
+				FF2153C5286477A6000BFEFA /* ApiRequest.swift in Sources */,
+				FF2153C328647758000BFEFA /* UserViewModel.swift in Sources */,
 				FF2153732861D272000BFEFA /* TrafficLight.swift in Sources */,
 				FF21538F2862E78F000BFEFA /* Helper.swift in Sources */,
 			);

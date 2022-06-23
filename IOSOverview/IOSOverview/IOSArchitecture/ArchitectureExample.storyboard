@@ -85,15 +85,41 @@
                                     <segue destination="HUh-BY-Fce" kind="show" id="xoL-VT-iAZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIq-Wo-6Uh">
+                                <rect key="frame" x="10" y="394" width="394" height="50"/>
+                                <color key="backgroundColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="MVC ">
+                                            <attributes>
+                                                <font key="NSFont" size="31" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="MVVM">
+                                    <backgroundConfiguration key="background" cornerRadius="21"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="31"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="DA1-FC-g4c" kind="show" id="maR-yH-JuY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AIq-Wo-6Uh" firstAttribute="top" secondItem="U6R-Sx-k55" secondAttribute="bottom" constant="24" id="3kZ-HS-KV9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Id7-ad-77W" secondAttribute="trailing" constant="10" id="6IO-jD-miM"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="trailing" secondItem="PhK-if-HAe" secondAttribute="trailing" id="9Vp-hD-iKS"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="top" secondItem="Id7-ad-77W" secondAttribute="bottom" constant="28" id="P1t-ta-Wm2"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="leading" secondItem="Id7-ad-77W" secondAttribute="leading" id="RNa-o8-LVH"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="trailing" secondItem="Id7-ad-77W" secondAttribute="trailing" id="UWM-nX-MtP"/>
+                            <constraint firstItem="AIq-Wo-6Uh" firstAttribute="leading" secondItem="U6R-Sx-k55" secondAttribute="leading" id="XV8-oq-TEI"/>
+                            <constraint firstItem="AIq-Wo-6Uh" firstAttribute="trailing" secondItem="U6R-Sx-k55" secondAttribute="trailing" id="adf-BV-MEX"/>
                             <constraint firstItem="Id7-ad-77W" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="89" id="cR8-e0-3Rk"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="top" secondItem="PhK-if-HAe" secondAttribute="bottom" constant="26" id="eVO-Zv-mIm"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="leading" secondItem="PhK-if-HAe" secondAttribute="leading" id="g7u-dZ-6sG"/>
@@ -113,7 +139,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htD-YM-pnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="-131"/>
+            <point key="canvasLocation" x="1030" y="7"/>
         </scene>
         <!--MVCApiGetRequest-->
         <scene sceneID="a09-Nu-bgH">
@@ -123,7 +149,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cde-kj-LLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="30"/>
+            <point key="canvasLocation" x="1041" y="47"/>
         </scene>
         <!--MVPArchitecture-->
         <scene sceneID="nsA-R1-taQ">
@@ -133,7 +159,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVv-JR-TWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="142"/>
+            <point key="canvasLocation" x="1041" y="88"/>
+        </scene>
+        <!--MVVMArchitecture-->
+        <scene sceneID="Mgx-xv-eJ0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MVVMArchitecture" id="DA1-FC-g4c" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v5t-6n-QLD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qub-Ca-192" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="130"/>
         </scene>
     </scenes>
     <resources>
