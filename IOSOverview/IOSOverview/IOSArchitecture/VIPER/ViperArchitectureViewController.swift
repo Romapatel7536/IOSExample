@@ -23,7 +23,7 @@ class ViperArchitectureViewController: UIViewController {
     // MARK: - Variables
     var navCoordinator: Router?
     var usersData: UserResponse?
-    public static let identifier = "ViperPatternViewController"
+    public static let identifier = "ViperArchitecture"
     
     // MARK: - IBoutlet
     @IBOutlet weak var tableView: UITableView!
@@ -35,6 +35,7 @@ class ViperArchitectureViewController: UIViewController {
             UINib(nibName: "TableViewCell", bundle: nil),
             forCellReuseIdentifier: "userCell"
         )
+        tableView.dataSource = self
         viperPresentor.view = self
         viperPresentor.getUserData()
     }
@@ -68,5 +69,4 @@ extension ViperArchitectureViewController: IViperView {
     func onFailure(error: String) {
         print("Error: \(error)")
     }
-    
 }
