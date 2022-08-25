@@ -57,7 +57,7 @@ extension TableViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CellTableViewCell else {
             return UITableViewCell()
-        }
+        } 
         cell.lblDetail.text = filteredData[indexPath.row]
         setImageFromUrl(image: cell.imgImage, url: filteredImage?[indexPath.row] ?? "")
         return cell
