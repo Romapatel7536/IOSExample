@@ -42,6 +42,7 @@
 		FF2BE6A027D758000066B17D /* OptionalExtraExamples.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalExtraExamples.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2FD63D27DF399F0042B35B /* ErrorHandling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ErrorHandling.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2FD63E27DF5F590042B35B /* ExtensionsExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ExtensionsExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FF3EA9F3291240AD006CD215 /* EXAMPLE.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = EXAMPLE.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF47C57027E07F310098A6E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF47C57627E0A0EC0098A6E9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FF5E6B2427EC5D710074D871 /* SetExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = SetExample.playground; path = ../../../../../romapatel/Desktop/SetExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -64,6 +65,7 @@
 		FFAEF98E27D20B3F003C623A /* IOSOverviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSOverviewTests.swift; sourceTree = "<group>"; };
 		FFAEF99427D20B3F003C623A /* IOSOverviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSOverviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAEF99827D20B3F003C623A /* IOSOverviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSOverviewUITests.swift; sourceTree = "<group>"; };
+		FFCEF36028C89BFC00C83A51 /* OpaqueTypeExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpaqueTypeExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FFD92A5627DB345E00F984FC /* Properties,Subscripts, Methods & Inheritance.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Properties,Subscripts, Methods & Inheritance.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		FFAEF97627D20B3E003C623A /* IOSOverview */ = {
 			isa = PBXGroup;
 			children = (
+				FFCEF35F28C8966500C83A51 /* Opaque types */,
 				FF92FC7427D20D86002873A5 /* IOSBasic */,
 				FF7490AF27D8721C008345EA /* AdvancedSwift_IOS(B) */,
 				FFAEF97927D20B3E003C623A /* SceneDelegate.swift */,
@@ -173,6 +176,15 @@
 				FFAEF99827D20B3F003C623A /* IOSOverviewUITests.swift */,
 			);
 			path = IOSOverviewUITests;
+			sourceTree = "<group>";
+		};
+		FFCEF35F28C8966500C83A51 /* Opaque types */ = {
+			isa = PBXGroup;
+			children = (
+				FFCEF36028C89BFC00C83A51 /* OpaqueTypeExample.playground */,
+				FF3EA9F3291240AD006CD215 /* EXAMPLE.playground */,
+			);
+			path = "Opaque types";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
