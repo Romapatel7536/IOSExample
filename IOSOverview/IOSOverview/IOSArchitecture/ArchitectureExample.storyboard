@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Id7-ad-77W">
-                                <rect key="frame" x="10" y="133" width="394" height="50"/>
+                                <rect key="frame" x="10" y="137" width="394" height="50"/>
                                 <color key="backgroundColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -40,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PhK-if-HAe">
-                                <rect key="frame" x="10" y="211" width="394" height="83"/>
+                                <rect key="frame" x="10" y="215" width="394" height="83"/>
                                 <color key="backgroundColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -63,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6R-Sx-k55">
-                                <rect key="frame" x="10" y="320" width="394" height="50"/>
+                                <rect key="frame" x="10" y="324" width="394" height="50"/>
                                 <color key="backgroundColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -86,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIq-Wo-6Uh">
-                                <rect key="frame" x="10" y="394" width="394" height="50"/>
+                                <rect key="frame" x="10" y="398" width="394" height="50"/>
                                 <color key="backgroundColor" red="0.25072029229999998" green="0.25072029229999998" blue="0.25072029229999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -108,21 +109,47 @@
                                     <segue destination="DA1-FC-g4c" kind="show" id="maR-yH-JuY"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPX-dY-vbL" customClass="MKRingProgressView">
+                                <rect key="frame" x="87" y="534" width="327" height="228"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="1" green="0.0080769524879999999" blue="0.043973990159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="1" green="0.0080769524879999999" blue="0.043973990159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundRingColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ringWidth">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesRingForZeroProgress" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="AIq-Wo-6Uh" firstAttribute="top" secondItem="U6R-Sx-k55" secondAttribute="bottom" constant="24" id="3kZ-HS-KV9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mPX-dY-vbL" secondAttribute="bottom" constant="100" id="4oL-uQ-kdG"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Id7-ad-77W" secondAttribute="trailing" constant="10" id="6IO-jD-miM"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="trailing" secondItem="PhK-if-HAe" secondAttribute="trailing" id="9Vp-hD-iKS"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="top" secondItem="Id7-ad-77W" secondAttribute="bottom" constant="28" id="P1t-ta-Wm2"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="leading" secondItem="Id7-ad-77W" secondAttribute="leading" id="RNa-o8-LVH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mPX-dY-vbL" secondAttribute="trailing" id="TzK-Ma-jil"/>
                             <constraint firstItem="PhK-if-HAe" firstAttribute="trailing" secondItem="Id7-ad-77W" secondAttribute="trailing" id="UWM-nX-MtP"/>
                             <constraint firstItem="AIq-Wo-6Uh" firstAttribute="leading" secondItem="U6R-Sx-k55" secondAttribute="leading" id="XV8-oq-TEI"/>
                             <constraint firstItem="AIq-Wo-6Uh" firstAttribute="trailing" secondItem="U6R-Sx-k55" secondAttribute="trailing" id="adf-BV-MEX"/>
                             <constraint firstItem="Id7-ad-77W" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="89" id="cR8-e0-3Rk"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="top" secondItem="PhK-if-HAe" secondAttribute="bottom" constant="26" id="eVO-Zv-mIm"/>
+                            <constraint firstItem="mPX-dY-vbL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="486" id="fdS-Ma-7ou"/>
                             <constraint firstItem="U6R-Sx-k55" firstAttribute="leading" secondItem="PhK-if-HAe" secondAttribute="leading" id="g7u-dZ-6sG"/>
+                            <constraint firstItem="mPX-dY-vbL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="87" id="hd7-or-LUI"/>
                             <constraint firstItem="Id7-ad-77W" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jAt-nE-Usd"/>
                         </constraints>
                     </view>

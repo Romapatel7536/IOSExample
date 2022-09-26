@@ -8,6 +8,7 @@ target 'IOSOverview' do
 pod 'Alamofire'
 pod 'R.swift'
 pod 'lottie-ios'
+pod 'MKRingProgressView'
   # Pods for IOSOverview
 
   target 'IOSOverviewTests' do
