@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1BC82829221DDB00AD74BD /* CombineDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BC82529221DDB00AD74BD /* CombineDemoViewController.swift */; };
+		FF1BC82929221DDB00AD74BD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BC82629221DDB00AD74BD /* UserTableViewCell.swift */; };
+		FF1BC82A29221DDB00AD74BD /* CombineExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1BC82729221DDB00AD74BD /* CombineExample.storyboard */; };
+		FF1BC82E2922203E00AD74BD /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1BC82D2922203E00AD74BD /* SignUp.storyboard */; };
+		FF1BC8302922205A00AD74BD /* SignUPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1BC82F2922205A00AD74BD /* SignUPViewController.swift */; };
 		FF47C57127E07F310098A6E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47C57027E07F310098A6E9 /* AppDelegate.swift */; };
 		FF47C57727E0A0EC0098A6E9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF47C57627E0A0EC0098A6E9 /* SecondViewController.swift */; };
 		FFAEF97A27D20B3E003C623A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAEF97927D20B3E003C623A /* SceneDelegate.swift */; };
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1BC82529221DDB00AD74BD /* CombineDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineDemoViewController.swift; sourceTree = "<group>"; };
+		FF1BC82629221DDB00AD74BD /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FF1BC82729221DDB00AD74BD /* CombineExample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CombineExample.storyboard; sourceTree = "<group>"; };
+		FF1BC82B29221DF900AD74BD /* CombineBasicExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombineBasicExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FF1BC82D2922203E00AD74BD /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		FF1BC82F2922205A00AD74BD /* SignUPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUPViewController.swift; sourceTree = "<group>"; };
 		FF2BE69D27D5F9770066B17D /* DictonariesExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DictonariesExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2BE69E27D61BF70066B17D /* OptionalsExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OptionalsExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FF2BE69F27D627DA0066B17D /* Chapter-2Exercise.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Chapter-2Exercise.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -92,6 +103,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1BC82429221DAA00AD74BD /* CombineExample */ = {
+			isa = PBXGroup;
+			children = (
+				FF1BC82C29221E4C00AD74BD /* CombineDemo */,
+				FF1BC82529221DDB00AD74BD /* CombineDemoViewController.swift */,
+				FF1BC82729221DDB00AD74BD /* CombineExample.storyboard */,
+				FF1BC82629221DDB00AD74BD /* UserTableViewCell.swift */,
+				FF1BC82B29221DF900AD74BD /* CombineBasicExample.playground */,
+			);
+			path = CombineExample;
+			sourceTree = "<group>";
+		};
+		FF1BC82C29221E4C00AD74BD /* CombineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FF1BC82D2922203E00AD74BD /* SignUp.storyboard */,
+				FF1BC82F2922205A00AD74BD /* SignUPViewController.swift */,
+			);
+			path = CombineDemo;
+			sourceTree = "<group>";
+		};
 		FF7490AF27D8721C008345EA /* AdvancedSwift_IOS(B) */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +177,7 @@
 		FFAEF97627D20B3E003C623A /* IOSOverview */ = {
 			isa = PBXGroup;
 			children = (
+				FF1BC82429221DAA00AD74BD /* CombineExample */,
 				FF92FC7427D20D86002873A5 /* IOSBasic */,
 				FF7490AF27D8721C008345EA /* AdvancedSwift_IOS(B) */,
 				FFAEF97927D20B3E003C623A /* SceneDelegate.swift */,
@@ -280,8 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAEF98427D20B3F003C623A /* LaunchScreen.storyboard in Resources */,
+				FF1BC82A29221DDB00AD74BD /* CombineExample.storyboard in Resources */,
 				FFAEF98127D20B3F003C623A /* Assets.xcassets in Resources */,
 				FFAEF97F27D20B3E003C623A /* Main.storyboard in Resources */,
+				FF1BC82E2922203E00AD74BD /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +345,9 @@
 				FFAEF97C27D20B3E003C623A /* ViewController.swift in Sources */,
 				FF47C57727E0A0EC0098A6E9 /* SecondViewController.swift in Sources */,
 				FFAEF97A27D20B3E003C623A /* SceneDelegate.swift in Sources */,
+				FF1BC8302922205A00AD74BD /* SignUPViewController.swift in Sources */,
+				FF1BC82929221DDB00AD74BD /* UserTableViewCell.swift in Sources */,
+				FF1BC82829221DDB00AD74BD /* CombineDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
