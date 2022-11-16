@@ -50,13 +50,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djm-9M-jR7" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djm-9M-jR7" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="241.66666666666666" width="307.33333333333331" height="20.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-no-zmm" customClass="FinProTextField" customModule="IOSOverview" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-no-zmm">
                                                 <rect key="frame" x="24" y="270" width="379" height="52"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="jdH-ZP-gnU"/>
@@ -64,41 +64,49 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 <connections>
+                                                    <action selector="emailDidChange:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="sXQ-Ic-AP5"/>
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="92F-48-XJg"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-4u-tmV" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-4u-tmV" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
                                                 <rect key="frame" x="23.999999999999993" y="347" width="117.33333333333331" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C72-fN-Dgl" customClass="FinProTextField" customModule="IOSOverview" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C72-fN-Dgl">
                                                 <rect key="frame" x="24" y="375.33333333333331" width="379" height="52"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
                                                 <connections>
+                                                    <action selector="passwordDidChange:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="ShU-FC-MxW"/>
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="6ok-pI-6zt"/>
                                                 </connections>
                                             </textField>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeL-sa-cGB" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="445.33333333333331" width="73.333333333333329" height="20.333333333333314"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeL-sa-cGB" customClass="FinProH5SemiBoldLabel" customModule="IOSOverview" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="445.33333333333331" width="138.66666666666666" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-pM-7LE" customClass="FinProTextFieldPassword" customModule="IOSOverview" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-pM-7LE">
                                                 <rect key="frame" x="24" y="473.66666666666669" width="379" height="52.000000000000057"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
                                                 <connections>
+                                                    <action selector="passwordConfirmationDidChange:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="kOZ-pp-ksx"/>
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="BIE-yP-lb0"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-z0-wdj" customClass="FinProButton" customModule="IOSOverview" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-z0-wdj">
                                                 <rect key="frame" x="24" y="555.66666666666663" width="379" height="47"/>
+                                                <color key="backgroundColor" red="0.16782823199999999" green="0.4752362967" blue="0.47292870279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Create An Account"/>
+                                                <state key="disabled">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="buttonRadius">
                                                         <integer key="value" value="0"/>
@@ -223,11 +231,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSignUp" destination="aKh-z0-wdj" id="xag-YJ-9MR"/>
                         <outlet property="lblTerms" destination="KMq-gg-qa9" id="XZi-Fo-42C"/>
-                        <outlet property="passwordTextField" destination="qoS-pM-7LE" id="nzP-g8-Dzs"/>
+                        <outlet property="passwordTextField" destination="C72-fN-Dgl" id="eZ5-c5-f5H"/>
                         <outlet property="scrollView" destination="A9R-SC-WuW" id="LQ3-X8-vHH"/>
-                        <outlet property="tvEmail" destination="C72-fN-Dgl" id="MWO-zR-lJf"/>
-                        <outlet property="tvName" destination="gaA-no-zmm" id="dy2-8x-W3P"/>
+                        <outlet property="tvEmail" destination="gaA-no-zmm" id="1sF-0e-gW2"/>
+                        <outlet property="tvName" destination="qoS-pM-7LE" id="XMP-L0-CNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
